@@ -25,7 +25,7 @@ Similarly in the SIgnup API we have called the SignupUserEvent where we pass all
 2. Navigate to the project directory:
 
     ```bash
-    cd bol_app
+    cd egrove_task
     ```
 
 3. Install dependencies:
