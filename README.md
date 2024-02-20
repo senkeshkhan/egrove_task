@@ -1,17 +1,42 @@
 # egrove_task
 
-A new Flutter project.
+### USER STORY
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+For login we have collected the email and password from the user and called the Bloc event LoginUserEvent and from there we are calling the API and if the statusCode is 200 we are adding the token to shared preferences using AppUtils and then we are checking weather the token is empty or not and proceeding to dashboard.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+In dashboard we are calling the GetCustomerDetailsEvent where the customer details are fetched currently the API is not working but have implemented everything 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# egrove_task" 
+Similarly in the SIgnup API we have called the SignupUserEvent where we pass all the required data and we call the API. That API is also not working and have implemented all the fields and validations.
+
+
+## Installation
+
+### System Requirements
+- Flutter ( 3.16.9 ) 
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/senkeshkhan/egrove_task.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd bol_app
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    flutter pub get
+    ```
+
+4. Run the application:
+
+    ```bash
+    flutter run
+    ```
+
